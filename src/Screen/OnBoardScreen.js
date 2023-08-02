@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Text, ImageBackground, StatusBar, useWindowDimensions } from 'react-native';
-import Btn from '../Components/btnGoogle';
+import Btn from '../Components/GoogleButton';
 
 // 7.useWindowdimension insead of "height%".
 
@@ -18,7 +18,7 @@ const OnBoardScreen = (props) => {
                 <Text style={styles.body}>
                     The best grain, the finest roast, the powerful flavor.
                 </Text>
-                <Btn Press={() => { props.navigation.navigate("Dashboard") }} />
+                <Btn Press={() => { props.navigation.navigate("HomeScreen") }} />
             </View>
         </View>
     );

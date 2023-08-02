@@ -5,7 +5,8 @@ const Colors = {
   secondary: '#E5E5E5',
   light: '#E5E5E5',
   grey: '#908e8c',
-  black: '#000000'
+  black: '#000000',
+  bisque: `#ffe4c4`
 };
 
 export default Colors;
