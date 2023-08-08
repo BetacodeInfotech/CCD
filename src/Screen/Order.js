@@ -18,7 +18,7 @@ const Order = ({ navigation, route }) => {
     const item = route.params;
     
     return (
-        <SafeAreaView style={styles.page}>
+        <SafeAreaView>
             <View style={styles.background}>
                 <StatusBar barStyle="dark-content" backgroundColor={'transparent'} />
                 <View style={styles.header}>
@@ -199,10 +199,6 @@ const styles = StyleSheet.create({
         marginTop: 5,
 
     },
-
-    // page:{
-    //     height:'100%',
-    // },
 
     header: {
         // flex:1,

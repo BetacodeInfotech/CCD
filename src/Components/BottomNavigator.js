@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Colors from '../Const/Colors';
 import HomeScreen from '../Screen/HomeScreen';
-import Cart from '../Screen/Cart';
+import Resturant from '../Screen/Cart';
 import Notification from '../Screen/Notification';
 import Favourite from '../Screen/Favourite';
 
@@ -14,10 +14,12 @@ const BottomNavigator = () => {
   return (
     <Tab.Navigator 
     
-    tabBarOptions={{showLabel: false,
-      activeTintColor: Colors.primary,
-    }}
-    screenOptions={{ headerShown: false }}
+    screenOptions={{ 
+      headerShown: false, 
+      showLabel: false, 
+      tabBarActiveTintColor:Colors.primary,
+      tabBarShowLabel: false,
+       }}
     >
     
       
@@ -44,7 +46,7 @@ const BottomNavigator = () => {
 
       <Tab.Screen
         name="Bag"
-        component={Cart}
+        component={Resturant}
         options={{
           tabBarIcon: ({ color }) => (
             <Icon name="local-mall" color={color} size={28} />

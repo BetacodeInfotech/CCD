@@ -70,7 +70,7 @@ const HomeScreen = (props) => {
             {/* <Icon name="add" size={20} style={styles.addToCartBtn}/> */}
           </View>
           <View style={styles.addToCartBtn}>
-            <Icon name="add" size={20} color={Colors.white} />
+            <Icon name="add" size={22} color={Colors.white} />
           </View>
         </View>
       </TouchableHighlight>
@@ -98,7 +98,7 @@ const HomeScreen = (props) => {
 
 
 
-      <ScrollView>
+      
         <View style={styles.ab}>
           <TextInput
             style={styles.input}
@@ -123,7 +123,7 @@ const HomeScreen = (props) => {
           data={foods}
           renderItem={({ item }) => <Card food={item} />}
         />
-      </ScrollView>
+      
     </View>
   );
 };

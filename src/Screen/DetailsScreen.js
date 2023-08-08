@@ -15,7 +15,7 @@ import { BuyButton } from '../Components/BuyButton';
 
 const {width} = Dimensions.get('window');
 const frameWidth = width;
-const columnWidth = frameWidth / 3;
+// const columnWidth = frameWidth / 3;
 
 const DetailsScreen = ({ navigation, route}) => {
   const [size, setSize] = useState('small');
